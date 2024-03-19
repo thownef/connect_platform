@@ -1,0 +1,90 @@
+.pricing {
+  &__wrapper {
+    margin: 50px 0;
+    th,
+    td {
+      cursor: default;
+      font-size: 1rem;
+    }
+    padding: 0 120px;
+    h1 {
+      font-size: 1.875rem;
+      color: #575656;
+      line-height: 1;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+    .ant-table-cell .pricing__noncolumn {
+      background-color: white !important;
+    }
+    th {
+      padding: 0 !important;
+      background-color: #0f9ed5 !important;
+    }
+  }
+
+  &__note {
+    h3 {
+      font-size: 1rem;
+      span {
+        color: red;
+      }
+    }
+    &__p {
+      margin: 0;
+    }
+  }
+
+  &__title {
+    color: white !important;
+    text-align: center;
+    padding: 8px;
+    font-size: 1.8rem;
+    p {
+      margin: 0;
+      font-size: 1rem;
+    }
+    span {
+      color: #fdd941;
+      font-size: 1rem;
+    }
+  }
+
+  &__column {
+    background-color: #d1e2f0 !important;
+  }
+
+  &__noncolumn {
+    background-color: white !important;
+  }
+
+  &__content {
+    text-align: center;
+  }
+}
+
+.standardCheck {
+  color: #0678c9 !important;
+}
+
+.premiumCheck {
+  color: #8709e7 !important;
+}
+
+@media (max-width: 767px) {
+  .pricing {
+    &__wrapper {
+      padding: 0 60px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .pricing {
+    &__wrapper {
+      padding: 0 20px;
+    }
+  }
+}

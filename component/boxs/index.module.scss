@@ -1,0 +1,12 @@
+.default_box > * {
+  border: 1px solid #b2c1e5;
+  border-radius: 5px;
+  background-color: #fcfcfd;
+  box-shadow: rgba(136, 165, 191, 0.48) 0px 1px 4px;
+  height: 100%;
+  &:hover {
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+      rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    cursor: pointer;
+  }
+}

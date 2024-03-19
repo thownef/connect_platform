@@ -1,0 +1,66 @@
+.guideline {
+  font-size: 1rem;
+  text-align: center;
+  padding: 0 5%;
+
+  &_title {
+    margin-top: 1%;
+  }
+
+  &_process,
+  &_features {
+    width: 30%;
+    margin: 0 0.5% 0.5% 0.5%;
+  }
+
+  &_steps {
+    width: 92%;
+    
+    margin-bottom: 2%;
+    &_head {
+      padding: 2vh 0;
+    }
+    &_content {
+      line-height: 2;
+      display: flex;
+      flex-flow: column;
+    }
+
+    &_line {
+      margin: 1% 0;
+    }
+  }
+
+  &_contact {
+    margin: 0 0.5% 0.5% 0.5%;
+    text-align: start;
+    width: 92%;
+  }
+}
+
+@media (max-width: 768px) {
+  .guideline {
+    flex-direction: column;
+    &_process,
+    &_features {
+      width: auto;
+    }
+
+    &_steps {
+      width: auto;
+      &_content {
+        line-height: 2;
+        display: flex;
+        flex-flow: column;
+      }
+
+      &_line {
+        margin: 1% 0;
+      }
+    }
+
+    &_contact {
+      width: auto;
+    }
+  }
+}

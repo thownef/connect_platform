@@ -1,0 +1,39 @@
+.user-features {
+  .feature-row {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .feature-card {
+      min-width: 30vw;
+      min-height: 20vh;
+      margin: 1vw;
+    }
+  }
+}
+
+@media (max-width: 915px) {
+  .user-features {
+    .feature-row {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .user-features {
+    .feature-row {
+      flex-direction: row;
+    }
+  }
+}
+
+// p {
+//   font-size: 3vw;
+// }
+
+// .box-card {
+//   height: 5vh;
+// }
