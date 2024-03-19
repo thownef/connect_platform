@@ -1,30 +1,22 @@
 import express from "express";
-import authRoutes from "./routes/auth.js";
-import userRoutes from "./routes/user.js";
-import profileRoutes from "./routes/member.js";
-import companyRoutes from "./routes/company.js";
-import categoryRoutes from "./routes/category.js";
-import contactRoutes from "./routes/contact.js";
-import imageRoutes from "./routes/image.js";
-import consultantRoutes from "./routes/consultant.js";
-import areaRoutes from "./routes/area.js";
 import cors from "cors";
 import multer from "multer";
-import multerS3 from "multer-s3";
 import { S3Client } from "@aws-sdk/client-s3";
+import multerS3 from "multer-s3";
 import dotenv from "dotenv";
+import serverless from "serverless-http";
 import { generateUploadURL } from "./s3.js";
 import EmailSender from "./sendEmail.js";
 import EmailSenderExpert from "./sendMailExpert.js";
-import serverless from "serverless-http";
 import EmailSenderUser from "./sendEmailNoti.js";
+import connection from "./config/connect.js";
 
-const router = express.Router();
 dotenv.config();
 
 const app = express();
 app.use(express.json());
 app.use(cors());
+connection()
 
 const region = "ap-southeast-1";
 const bucketName = "vjpconnect";
@@ -121,16 +113,6 @@ app.post("/server/send-user", async (req, res) => {
   }
 });
 
-app.use("/server/auth", authRoutes);
-app.use("/server/user", userRoutes);
-app.use("/server/profile", profileRoutes);
-app.use("/server/getcompany", companyRoutes);
-app.use("/server/category", categoryRoutes);
-app.use("/server/contact", contactRoutes);
-app.use("./netlify/functions/index ", router);
-app.use("/server/image", imageRoutes);
-app.use("/server/consultant", consultantRoutes);
-app.use("/server/area", areaRoutes);
 
 app.listen(8080, () => {
   console.log("Connected to backend!");
