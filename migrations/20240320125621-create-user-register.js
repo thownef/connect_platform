@@ -2,14 +2,11 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('user_registers', {
+    await queryInterface.createTable('user_register', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
-        type: Sequelize.INTEGER
-      },
-      id: {
         type: Sequelize.INTEGER
       },
       email: {
@@ -24,6 +21,12 @@ module.exports = {
       company_name: {
         type: Sequelize.STRING
       },
+      company_name_en: {
+        type: Sequelize.STRING
+      },
+      company_name_jp: {
+        type: Sequelize.STRING
+      },
       user_name: {
         type: Sequelize.STRING
       },
@@ -31,21 +34,18 @@ module.exports = {
         type: Sequelize.STRING
       },
       booking_count: {
+        defaultValue: 4,
         type: Sequelize.TINYINT
       },
-      company_name_en: {
-        type: Sequelize.STRING
-      },
-      company_name_jp: {
-        type: Sequelize.STRING
-      },
       allow: {
+        defaultValue: 0,
         type: Sequelize.INTEGER
       },
       operator: {
         type: Sequelize.STRING
       },
       highlight: {
+        defaultValue: 0,
         type: Sequelize.BOOLEAN
       },
       createdAt: {
@@ -55,13 +55,12 @@ module.exports = {
       },
       updatedAt: {
         allowNull: false,
-        defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
-        onUpdate: Sequelize.literal('CURRENT_TIMESTAMP'),
+        defaultValue: Sequelize.literal('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'),
         type: Sequelize.DATE
       }
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('user_registers');
+    await queryInterface.dropTable('user_register');
   }
 };

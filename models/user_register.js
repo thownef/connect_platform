@@ -14,16 +14,15 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   user_register.init({
-    id: DataTypes.INTEGER,
     email: DataTypes.STRING,
     password: DataTypes.STRING,
     country: DataTypes.STRING,
     company_name: DataTypes.STRING,
-    user_name: DataTypes.STRING,
-    phone: DataTypes.STRING,
-    booking_count: DataTypes.TINYINT,
     company_name_en: DataTypes.STRING,
     company_name_jp: DataTypes.STRING,
+    booking_count: DataTypes.TINYINT,
+    user_name: DataTypes.STRING,
+    phone: DataTypes.STRING,
     allow: DataTypes.INTEGER,
     operator: DataTypes.STRING,
     highlight: DataTypes.BOOLEAN

@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "thodev",
-    "password": "password",
-    "database": "vjbc",
-    "host": "192.168.0.222",
+    "username": "root",
+    "password": null,
+    "database": "vjc",
+    "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
