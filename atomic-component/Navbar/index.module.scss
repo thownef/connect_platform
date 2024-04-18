@@ -1,0 +1,141 @@
+.navbar {
+  &__container {
+    position: sticky;
+    width: 100%;
+    background: white;
+    z-index: 999;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    top: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__menu,
+  &__menu__hidden {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      margin-right: 10px;
+      padding: 10px;
+      color: unset;
+      &:hover {
+        font-weight: 600;
+        //cursor: pointer;
+      }
+    }
+  }
+  &__left_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    button {
+      font-size: 1rem;
+      background: #002c90;
+      border: none;
+      color: white;
+      padding: 10px 26px;
+      border-radius: 4px;
+      font-weight: 700;
+      &:hover {
+        box-shadow: 4px 5px 10px 0px rgba(0, 22, 94, 0.6);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.logo {
+  text-align: center;
+  margin: 15px 0 15px 10px;
+  img {
+    width: 100%;
+    height: 80px;
+    object-fit: contain;
+  }
+}
+
+.button__login {
+  text-align: center;
+  align-self: center;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  &__tooltip {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8px;
+  }
+  &__name {
+    margin-right: 8px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif !important;
+  }
+  button {
+    background: linear-gradient(45deg, #b74d4e, #b73232);
+    border: none;
+    color: white;
+    padding: 10px 26px;
+    border-radius: 4px;
+    font-weight: 700;
+    margin: 0px 10px;
+    &:hover {
+      box-shadow: 4px 5px 10px 0px rgba(183, 50, 50, 0.6);
+      cursor: pointer;
+    }
+  }
+}
+
+.menu__mobile {
+  display: none;
+}
+
+.navbar__menu__hidden {
+  display: none;
+}
+
+@media (max-width: 1610px) {
+  .navbar__menu {
+    display: none;
+  }
+
+  .navbar__menu__hidden {
+    display: flex !important;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .button__login {
+    display: none;
+  }
+
+  .button__login__name {
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    width: 300px;
+    text-align: center;
+    margin: 15px 0px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .menu__mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: -webkit-center;
+    &_item {
+      a {
+        color: black;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

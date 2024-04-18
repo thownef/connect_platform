@@ -1,0 +1,41 @@
+.review {
+	&__title {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 800;
+		color: #0f0f0f;
+		font-size: 35px;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: center;
+		background: #d3e4ea;
+		border-radius: 8px;
+		box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+		padding: 20px;
+		font-weight: 900;
+
+		>p {
+			margin: 0 10px;
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+	&__img {
+		img {
+			width: 100%;
+			object-fit: contain;
+		}
+	}
+
+	&__left {
+		text-align: left !important;
+	}
+
+	&__right {
+		text-align: right !important;
+	}
+}

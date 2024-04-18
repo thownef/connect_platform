@@ -1,0 +1,20 @@
+export type Expert = {
+  id: string | number;
+  email: string;
+  user_name: string;
+  password: string;
+  user_name_en: string;
+  user_name_jp: string;
+  langues: string;
+  specialize_vn: string;
+  specialize_en: string;
+  specialize_jp: string;
+  experience_vn: string;
+  experience_en: string;
+  experience_jp: string;
+  education_vn: string;
+  education_en: string;
+  education_jp: string;
+  image: string;
+  allow: string;
+};

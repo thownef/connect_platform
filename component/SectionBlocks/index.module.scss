@@ -1,0 +1,21 @@
+.section_block {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 1%;
+  &__content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 1%;
+    row-gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section_block {
+    &__content {
+      flex-direction: column;
+    }
+  }
+}

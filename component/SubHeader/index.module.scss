@@ -1,0 +1,19 @@
+.sub_title {
+  color: #40b1f7;
+  font-size: 2vh;
+  &_line {
+    background-color: #40b1f7;
+    display: inline-block;
+    height: 1px;
+    margin: 0 10px;
+    vertical-align: middle;
+    width: 3vw;
+  }
+}
+@media (max-width: 768px) {
+  .sub_title {
+    &_line {
+      width: 10vw;
+    }
+  }
+}

@@ -1,0 +1,156 @@
+.ant-modal {
+	width: auto !important;
+}
+
+.layout-content {
+	margin: 5px 15px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem;
+}
+
+.model-title {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 25px;
+	font-family: 'Poppins', sans-serif;
+	margin: 10px 0px;
+	font-weight: 700;
+	font-size: 20px;
+	color: rgb(12, 195, 240);
+}
+
+.label-title {
+	font-size: 1rem;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	margin-bottom: 5px;
+
+	label {
+		font-size: 1rem;
+	}
+}
+
+.label-info-company {
+	border: 1px solid #d9d9d9;
+	border-radius: 8px;
+	margin-bottom: 1rem;
+}
+
+.info-input {
+	font-size: 14px;
+	height: 38px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	padding: 0 15px;
+	width: 100%;
+	background: none;
+	border: none;
+	outline: none;
+}
+
+.item-design {
+	margin: 5px 15px;
+
+	span {
+		font-size: 1rem;
+	}
+}
+
+.layout-info-image {
+	display: flex;
+	justify-content: center;
+}
+
+.member__main_info_item h5 {
+	font-size: 1rem;
+	margin-bottom: 15px;
+	margin-top: 0;
+	font-weight: 500;
+	color: black;
+}
+
+.title-select {
+	font-weight: 400;
+	line-height: 1.2;
+	margin-bottom: 0.5rem;
+	margin-top: 0;
+	font-size: 1rem;
+}
+
+.select-info {
+	font-size: 1rem;
+	width: 100%;
+	height: 38px;
+	border: 1px solid #dfdce6;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+
+.custom-file-upload {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	cursor: pointer;
+	background-color: #e0e0e0;
+	border-radius: 4px;
+	width: 2rem;
+	height: 1.5rem;
+	margin-right: 0.5rem;
+}
+
+.custom-file-upload:hover {
+	background-color: #d0d0d0;
+}
+
+.custom-file-upload input[type='file'] {
+	display: none;
+}
+
+.form-info-btn {
+	display: flex;
+	justify-content: center;
+	margin: 10px 0;
+}
+
+.btn-edit-company {
+	padding: 6px 15px;
+}
+
+.btn-edit {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem;
+	color: #ffffff;
+	background: #1891fa;
+	border: 1px solid #d5d6d8;
+	padding: 8px 50px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.btn-edit:hover {
+	background: #83c4fe;
+	color: #ffffff;
+}
+
+.btn-cancel {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem;
+	background: #ffffff;
+	border: 1px solid #d5d6d8;
+	padding: 8px 50px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.btn-cancel:hover {
+	background: #83c4fe;
+	color: #ffffff;
+}
+
+@media (max-width: 575px) {
+	.btn-edit {
+		padding: 8px 30px;
+	}
+}

@@ -1,0 +1,35 @@
+.term {
+  &__wrapper {
+    margin: 50px 0;
+    padding: 0 20px;
+  }
+
+  &__title {
+    h1 {
+      font-size: 1.875rem;
+      color: #575656;
+      line-height: 1;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__section {
+    display: flex;
+    max-width: 1400px;
+    margin: 30px auto 0;
+  }
+
+  &__content {
+    width: 100%;
+
+    h2 {
+      font-weight: 700;
+      margin-bottom: 30px;
+      font-size: 1rem;
+      color: #40b1f7;
+    }
+  }
+}
